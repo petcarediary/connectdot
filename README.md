@@ -1,174 +1,46 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망돌 심폐소생 프로젝트</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #667eea;
-        }
-        
-        .app-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .card h3 {
-            color: #764ba2;
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: #2d3748;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-        
-        .download-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .app-info {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h1>🎵 망돌 심폐소생 프로젝트</h1>
-        <p>K-POP 아이돌 매니저 시뮬레이션 게임</p>
-    </header>
+# 🎵 망돌 심폐소생 프로젝트
 
-    <main>
-        <section>
-            <h2>게임 소개</h2>
-            <p>
-                신인 아이돌 그룹의 매니저가 되어 멤버들의 스케줄을 관리하고, 
-                다양한 활동을 통해 최고의 아이돌 그룹으로 성장시켜보세요!
-            </p>
-        </section>
+K-POP 아이돌 매니저 시뮬레이션 게임
 
-        <section>
-            <h2>주요 특징</h2>
-            <div class="app-info">
-                <div class="card">
-                    <h3>📅 스케줄 관리</h3>
-                    <p>앨범 제작, 방송 출연, 팬사인회 등 다양한 활동을 계획하세요.</p>
-                </div>
-                <div class="card">
-                    <h3>💬 멤버 상담</h3>
-                    <p>멤버들과 소통하며 친밀도를 높이고 특별한 스토리를 경험하세요.</p>
-                </div>
-                <div class="card">
-                    <h3>🎯 다양한 엔딩</h3>
-                    <p>당신의 선택에 따라 6가지의 다른 엔딩을 만나보세요.</p>
-                </div>
-            </div>
-        </section>
+## 📖 게임 소개
 
-        <section>
-            <h2>다운로드</h2>
-            <div class="download-buttons">
-                <a href="#" class="btn">🍎 App Store</a>
-                <a href="#" class="btn">🤖 Google Play</a>
-            </div>
-            <p style="text-align: center; margin-top: 1rem; color: #666;">
-                곧 출시 예정입니다!
-            </p>
-        </section>
+신인 아이돌 그룹의 매니저가 되어 멤버들의 스케줄을 관리하고, 다양한 활동을 통해 최고의 아이돌 그룹으로 성장시키는 시뮬레이션 게임입니다.
 
-        <section>
-            <h2>문의</h2>
-            <p>
-                게임에 대한 문의사항이나 버그 리포트는 이메일로 보내주세요.<br>
-                이메일: <a href="mailto:contact@example.com">contact@example.com</a>
-            </p>
-        </section>
-    </main>
+## ✨ 주요 기능
 
-    <footer>
-        <p>&copy; 2025 망돌 심폐소생 프로젝트. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            <a href="/privacy.html" style="color: #a0aec0; text-decoration: none;">개인정보 처리방침</a>
-        </p>
-    </footer>
-</body>
-</html>
+- 📅 **스케줄 관리**: 앨범 제작, 방송 출연, 팬사인회 등 다양한 활동
+- 💬 **멤버 상담**: 멤버들과의 소통을 통한 친밀도 시스템
+- 🎯 **다중 엔딩**: 선택에 따라 달라지는 6가지 엔딩
+- 🎨 **캐릭터 성장**: 능력치 관리와 육성 시스템
+- 🎵 **배경음악**: 게임에 어울리는 다양한 BGM
+- 🏪 **아이템 상점**: 게임 진행을 돕는 아이템 구매
+
+## 🛠 기술 스택
+
+### 프레임워크 & 언어
+- **Flutter**: 3.0+
+- **Dart**: 3.0+
+
+### 상태 관리
+- **Riverpod**: 2.6.1
+
+### 로컬 저장소
+- **Hive**: 2.2.3
+- **SharedPreferences**: 2.2.2
+
+### 기타
+- **AudioPlayers**: 6.1.0 (BGM/효과음)
+- **Google Mobile Ads**: 5.2.0 (광고)
+
+## 📱 지원 플랫폼
+
+- ✅ iOS 13.0+
+- ✅ Android (API 21+)
+
+## 🚀 시작하기
+
+### 필요 조건
+
+Flutter SDK: 3.0+
+Xcode: 14.0+ (iOS 빌드용)
+Android Studio (Android 빌드용)
