@@ -1,174 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>망돌 심폐소생 프로젝트</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-            line-height: 1.6;
-            color: #333;
-        }
-        
-        header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 4rem 2rem;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-        
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-        }
-        
-        main {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 4rem 2rem;
-        }
-        
-        section {
-            margin-bottom: 4rem;
-        }
-        
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-            color: #667eea;
-        }
-        
-        .app-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
-        }
-        
-        .card {
-            background: #f8f9fa;
-            padding: 2rem;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .card h3 {
-            color: #764ba2;
-            margin-bottom: 1rem;
-        }
-        
-        footer {
-            background: #2d3748;
-            color: white;
-            text-align: center;
-            padding: 2rem;
-            margin-top: 4rem;
-        }
-        
-        .download-buttons {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 2rem;
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 1rem 2rem;
-            background: white;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: bold;
-            transition: transform 0.2s;
-        }
-        
-        .btn:hover {
-            transform: translateY(-2px);
-        }
-        
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            
-            .app-info {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="커넥트닷은 AI 생활 앱, 반려동물 건강 기록 앱과 캐주얼 퍼즐, 육성 시뮬레이션 게임을 만듭니다. 앱 소개와 다운로드 링크를 확인하세요.">
+<meta name="theme-color" content="#292351">
+<title>커넥트닷 | ConnectDot — 앱과 게임</title>
+<style>
+:root{color-scheme:light;--ink:#26233b;--muted:#625f73;--purple:#6550b8;--line:#e7e3f0;--paper:#fbfafc}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.8 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",sans-serif;word-break:keep-all;overflow-wrap:anywhere}a{color:#51409c;text-underline-offset:4px}a:hover{color:#312361}a:focus-visible,div:focus-visible{outline:3px solid #9778e0;outline-offset:5px}.skip{position:absolute;top:-100px;left:16px;padding:10px;background:white;z-index:10}.skip:focus{top:12px}.nav{background:#fff;border-bottom:1px solid var(--line)}.nav-inner{max-width:1160px;margin:auto;padding:20px 28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{text-decoration:none;font-size:23px;font-weight:800;letter-spacing:-1px;color:var(--ink)}.brand span{color:var(--purple)}nav{display:flex;gap:24px;flex-wrap:wrap}nav a{font-size:14px;text-decoration:none;color:var(--muted)}.hero{background:linear-gradient(115deg,#292351,#453776);color:#fff}.hero-inner{max-width:1160px;margin:auto;padding:72px 28px 78px}.eyebrow{color:#d5c8fc;font-size:12px;font-weight:700;letter-spacing:3px;margin:0 0 22px}.hero h1{font-size:clamp(32px,5vw,54px);line-height:1.3;letter-spacing:-2px;max-width:790px;margin:0 0 24px}.hero p{max-width:650px;color:#e2daef;margin:0}.hero .action{display:inline-block;background:#fff;color:#39305f;border-radius:8px;text-decoration:none;padding:12px 22px;font-weight:700;margin-top:28px}main{max-width:1160px;margin:auto;padding:45px 28px 70px}main>p{max-width:930px;color:var(--muted)}main>p:first-child{font-size:23px;color:var(--ink)}h2{font-size:30px;letter-spacing:-1px;margin:64px 0 24px;padding-top:28px;border-top:1px solid var(--line)}h3{font-size:21px;letter-spacing:-.5px;margin:38px 0 12px;border-left:4px solid #8971c9;padding-left:15px}ul{padding-left:24px;color:var(--muted)}li{margin:6px 0}strong{color:var(--ink)}.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:#fff;margin:25px 0}table{border-collapse:collapse;width:100%;font-size:14px;min-width:650px}th{background:#f0edf7;text-align:left;color:#4c4265;font-size:13px}th,td{padding:17px 18px;border-bottom:1px solid var(--line);vertical-align:top}tr:last-child td{border-bottom:0}td:first-child{min-width:150px}td a{display:inline-block}hr{border:0;border-top:1px solid var(--line);margin-top:40px}hr+p{font-size:13px}footer{background:#292351;color:#ddd5ef}footer .inner{max-width:1160px;margin:auto;padding:32px 28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}footer a{color:#eee8ff}footer p{margin:0;font-size:13px}@media(max-width:640px){.nav-inner{padding:16px 20px;align-items:flex-start;flex-direction:column;gap:8px}nav{gap:18px}.hero-inner{padding:48px 20px 52px}.hero h1{letter-spacing:-1px}main{padding:28px 20px 48px}h2{font-size:25px;margin-top:45px}h3{font-size:19px}table{font-size:13px}th,td{padding:13px}footer .inner{padding:28px 20px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
 </head>
 <body>
-    <header>
-        <h1>🎵 망돌 심폐소생 프로젝트</h1>
-        <p>K-POP 아이돌 매니저 시뮬레이션 게임</p>
-    </header>
-
-    <main>
-        <section>
-            <h2>게임 소개</h2>
-            <p>
-                신인 아이돌 그룹의 매니저가 되어 멤버들의 스케줄을 관리하고, 
-                다양한 활동을 통해 최고의 아이돌 그룹으로 성장시켜보세요!
-            </p>
-        </section>
-
-        <section>
-            <h2>주요 특징</h2>
-            <div class="app-info">
-                <div class="card">
-                    <h3>📅 스케줄 관리</h3>
-                    <p>앨범 제작, 방송 출연, 팬사인회 등 다양한 활동을 계획하세요.</p>
-                </div>
-                <div class="card">
-                    <h3>💬 멤버 상담</h3>
-                    <p>멤버들과 소통하며 친밀도를 높이고 특별한 스토리를 경험하세요.</p>
-                </div>
-                <div class="card">
-                    <h3>🎯 다양한 엔딩</h3>
-                    <p>당신의 선택에 따라 6가지의 다른 엔딩을 만나보세요.</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>다운로드</h2>
-            <div class="download-buttons">
-                <a href="#" class="btn">🍎 App Store</a>
-                <a href="#" class="btn">🤖 Google Play</a>
-            </div>
-            <p style="text-align: center; margin-top: 1rem; color: #666;">
-                곧 출시 예정입니다!
-            </p>
-        </section>
-
-        <section>
-            <h2>문의</h2>
-            <p>
-                게임에 대한 문의사항이나 버그 리포트는 이메일로 보내주세요.<br>
-                이메일: <a href="mailto:support@connectdot.co.kr">support@connectdot.co.kr</a>
-            </p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2025 망돌 심폐소생 프로젝트. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            <a href="/privacy.html" style="color: #a0aec0; text-decoration: none;">개인정보 처리방침</a>
-        </p>
-    </footer>
+<a class="skip" href="#main">본문으로 이동</a>
+<header class="nav"><div class="nav-inner"><a href="#" class="brand">Connect<span>Dot.</span></a><nav aria-label="주요 메뉴"><a href="#focus">회사 소개</a><a href="#apps">앱과 게임</a><a href="#history">업데이트</a><a href="#contact">문의</a></nav></div></header>
+<section class="hero" aria-labelledby="hero-title"><div class="hero-inner"><p class="eyebrow">CONNECTDOT · APPS &amp; GAMES</p><h1 id="hero-title">일상의 쓸모부터,<br>이야기 속 즐거움까지.</h1><p>생활을 편리하게 만드는 앱과 취향을 담은 게임.<br>커넥트닷이 만드는 다양한 경험을 만나보세요.</p><a class="action" href="#apps">앱과 게임 둘러보기 ↗</a></div></section>
+<main id="main">
+<p><strong>일상에 필요한 도구와 오래 기억에 남는 게임을 만듭니다.</strong></p>
+<p>주식회사 커넥트닷(ConnectDot Co., Ltd)은 생활 속 기록을 돕는 모바일 앱과 다양한 취향을 위한 게임을 개발합니다. AI를 활용한 식단 관리, 반려동물 건강 기록부터 틀린그림찾기, 숨은 고양이 찾기, 아이돌 경영 및 판타지 BL 육성 시뮬레이션까지, 실용성과 즐거움을 담은 서비스를 선보이고 있습니다.</p>
+<p>출시 이후에도 기능 개선, 콘텐츠 추가, 다국어 지원을 통해 제품을 꾸준히 발전시켜 나갑니다.</p>
+<h2 id="focus">개발 분야</h2>
+<ul><li><strong>생활·기록 앱</strong> — 식단과 체중, 반려동물의 건강과 일상을 편리하게 기록하는 도구</li><li><strong>AI 활용 서비스</strong> — 음식 사진 분석과 맞춤형 코칭, 앱 홍보 콘텐츠 생성</li><li><strong>캐주얼 퍼즐 게임</strong> — 일러스트를 탐색하며 즐기는 틀린그림찾기와 숨은 고양이 찾기</li><li><strong>육성·스토리 게임</strong> — 일정과 선택에 따라 성장 과정과 결말이 달라지는 시뮬레이션</li></ul>
+<h2 id="apps">앱과 게임</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="앱 목록"><table><thead><tr><th scope="col">서비스</th><th scope="col">분야</th><th scope="col">소개</th><th scope="col">플랫폼</th><th scope="col">다운로드</th></tr></thead><tbody><tr><td><strong>FitTalk</strong></td><td>AI 식단·다이어트 관리</td><td>음식 사진 분석과 AI 코칭을 활용하는 다이어트 기록 앱</td><td>Android</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.fittalk">Google Play</a></td></tr><tr><td><strong>집사노트 · PetCareNote</strong></td><td>반려동물 건강 기록</td><td>건강일기, 증상, 체중, 식사와 일정을 관리하는 반려동물 기록 앱</td><td>Android · iOS</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.petcarenote">Google Play</a></td></tr><tr><td><strong>망돌 심폐소생 프로젝트</strong></td><td>아이돌 육성·경영</td><td>위기의 보이그룹을 맡아 3년 동안 성장시키는 경영 시뮬레이션</td><td>Android · iOS</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.kpoptycoon&amp;hl=ko">Google Play</a> · <a href="https://apps.apple.com/us/app/%EB%A7%9D%EB%8F%8C-%EC%8B%AC%ED%8F%90%EC%86%8C%EC%83%9D-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/id6758028837">App Store</a></td></tr><tr><td><strong>디피 · Diffy</strong></td><td>틀린그림찾기</td><td>일러스트와 명화 테마 속 차이를 찾는 퍼즐 게임</td><td>Android</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.diffy">Google Play</a></td></tr><tr><td><strong>어디있냥</strong></td><td>숨은 고양이 찾기</td><td>다양한 장소에 숨어 있는 고양이를 찾아가는 탐색 퍼즐 게임</td><td>Android</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.findhiddencats">Google Play</a></td></tr><tr><td><strong>심연의 요람</strong></td><td>판타지 BL 육성</td><td>마계에서 함께하는 5년, 성장과 관계에 따라 결말이 달라지는 육성 시뮬레이션</td><td>Android</td><td><a href="https://play.google.com/store/apps/details?id=com.connectdot.dearMyBeasts">Google Play</a></td></tr></tbody></table></div>
+<h3>FitTalk — AI 다이어트 코치</h3>
+<p>식사 사진과 일상 기록을 바탕으로 식단 관리를 돕는 앱입니다. 음식 사진으로 칼로리와 영양소를 분석하고, 개인 목표에 맞춘 AI 코칭을 제공합니다.</p>
+<ul><li>음식 사진 기반 칼로리·영양소 분석</li><li>식단·운동 일기와 체중·체성분 변화 기록</li><li>목표에 맞춘 AI 코칭</li></ul>
+<h3>집사노트 — 반려동물 건강 기록</h3>
+<p>반려동물의 일상과 건강 변화를 한곳에 모아 기록하는 앱입니다. 인터넷 연결 없이 기본 기록 기능을 사용할 수 있으며, 꾸준히 쌓은 기록을 진료 시 참고할 수 있습니다.</p>
+<ul><li>사진을 곁들인 건강일기와 증상 기록</li><li>체중 변화, 식사, 호흡수 등 건강 항목 관리</li><li>예방접종·검진 일정과 알림</li><li>Android 한국어·영어·일본어·중국어 지원</li></ul>
+<h3>망돌 심폐소생 프로젝트 — 아이돌 육성·경영 게임</h3>
+<p>해체 위기의 4인조 보이그룹 <strong>UN:CUT</strong>의 매니저가 되어, 3년의 계약 기간 동안 그룹을 성장시키는 게임입니다. 활동 일정과 자원을 관리하고, 멤버들의 고민과 돌발 상황에 대응하며 그룹의 미래를 결정합니다.</p>
+<ul><li>주 단위 일정과 멤버별 활동 선택</li><li>자금·인지도·팀워크·체력·의욕 관리</li><li>상담과 돌발 이벤트, 선택에 따른 멀티 엔딩</li><li>Android 영어 현지화 지원</li></ul>
+<h3>디피 · Diffy — 틀린그림찾기</h3>
+<p>두 그림 속에 숨겨진 차이를 찾아내는 캐주얼 퍼즐 게임입니다. 귀여운 일러스트와 명화 테마를 시간제한 없이 살펴보며 관찰의 재미를 즐길 수 있습니다.</p>
+<ul><li>그림마다 10개의 차이 찾기</li><li>확대·이동과 힌트 기능</li><li>테마별 진행 상황 저장</li><li>한국어·영어 및 오프라인 플레이 지원</li></ul>
+<h3>어디있냥 — 숨은 고양이 찾기</h3>
+<p>다양한 장소와 일러스트 속에 숨어 있는 고양이를 찾는 게임입니다. 화면을 확대하고 구석구석 탐색하며 숨어 있는 고양이를 발견하는 즐거움을 담았습니다.</p>
+<ul><li>다양한 배경 속 숨은 고양이 탐색</li><li>확대·축소와 화면 이동, 힌트 기능</li><li>단계적으로 높아지는 난이도</li><li>한국어·영어 지원</li></ul>
+<h3>심연의 요람 — BL 게임, 판타지 육성 시뮬레이션</h3>
+<p>마계에 남은 인간 기사 <strong>카시안</strong>과 세 마수 <strong>루카·아스테르·푸딩</strong>의 이야기를 담은 판타지 BL 육성 게임입니다. 5년 동안 교육, 아르바이트, 훈련과 휴식을 계획하고, 대화와 이벤트를 통해 서로의 관계를 만들어갑니다.</p>
+<ul><li>일정 설계와 능력치 관리 중심의 육성</li><li>개성 있는 캐릭터별 이야기와 관계 변화</li><li>성장 방향과 선택에 따른 멀티 엔딩</li><li>엔딩 일러스트와 후일담 수집</li></ul>
+<h2 id="web">웹 서비스 개발</h2>
+<h3>앱 홍보 콘텐츠 생성 도구</h3>
+<p>앱 홍보에 사용할 콘텐츠를 자동으로 생성하는 웹 서비스 개발 프로젝트입니다. 블로그 포스팅을 포함한 홍보 자동화를 검토했으며, 개발 기록상 <strong>콘텐츠 자동 생성 기능까지 구현</strong>했습니다.</p>
+<ul><li>개발 기록: 2025년 10월</li><li><a href="https://appbooster-2a95f.web.app/">프로젝트 링크</a></li></ul>
+<h2 id="history">주요 출시·업데이트 이력</h2>
+<div class="table-wrap" tabindex="0" role="region" aria-label="업데이트 이력"><table><thead><tr><th scope="col">시기</th><th scope="col">내용</th></tr></thead><tbody><tr><td>2025.09</td><td>FitTalk 개발·서비스 기록</td></tr><tr><td>2025.10</td><td>앱 홍보 콘텐츠 생성 도구 개발</td></tr><tr><td>2025.11</td><td>집사노트 Android 출시</td></tr><tr><td>2025.12</td><td>집사노트 iOS 출시, Android 영어·일본어·중국어 지원 추가</td></tr><tr><td>2026.01.15</td><td>망돌 심폐소생 프로젝트 Android 출시</td></tr><tr><td>2026.01.23</td><td>망돌 심폐소생 프로젝트 iOS 출시</td></tr><tr><td>2026.02</td><td>망돌 심폐소생 프로젝트 iOS 활동 일정에 돌발 이벤트 추가</td></tr><tr><td>2026.04.02</td><td>Diffy Android 출시</td></tr><tr><td>2026.04.03</td><td>Diffy 명화 테마 추가</td></tr><tr><td>2026.04.20</td><td>망돌 심폐소생 프로젝트 Android 영어 버전 출시</td></tr><tr><td>2026.05.02</td><td>어디있냥 Android 출시</td></tr><tr><td>2026.08.02</td><td>심연의 요람 Android 출시</td></tr></tbody></table></div>
+<h2 id="contact">문의</h2>
+<ul><li><strong>회사명:</strong> 주식회사 커넥트닷 · ConnectDot Co., Ltd</li><li><strong>이메일:</strong> <a href="mailto:support@connectdot.co.kr">support@connectdot.co.kr</a></li><li><strong>개발 기록:</strong> <a href="https://faithful-dimple-f55.notion.site/2e81d4745f1580198e58fd191101556e">어플 개발/업데이트 현황</a></li></ul>
+<hr>
+<p>이 목록은 공개된 개발·업데이트 문서에 기록된 제품을 기준으로 작성했습니다. 모바일 앱은 제품 기준 6종이며, Android 6건·iOS 2건으로 플랫폼별 출시 기록은 총 8건입니다. 집사노트 iOS 출시 이력은 개발 문서 기준이며, 해당 문서에 App Store 링크는 기재되어 있지 않습니다.</p>
+</main>
+<footer><div class="inner"><p>© 2026 ConnectDot Co., Ltd. All rights reserved.</p><p><a href="./privacy.html">개인정보 처리방침</a> · <a href="./support.html">고객 지원</a> · <a href="mailto:support@connectdot.co.kr">이메일 문의</a></p></div></footer>
 </body>
 </html>
